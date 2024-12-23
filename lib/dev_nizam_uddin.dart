@@ -1,3 +1,4 @@
+import 'package:devnizamuddin_github_io/app/config/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -8,10 +9,11 @@ class DevNizamUddin extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
-      title: "DevNizamUddin",
+    return GetMaterialApp(
+      title: 'DevNizamUddin',
       debugShowCheckedModeBanner: false,
-      home: HomeView(),
+      theme: lightTheme,
+      home: const HomeView(),
     );
   }
 }
