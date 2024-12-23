@@ -17,14 +17,80 @@ const OutlineInputBorder FOCUSED_ERROR_BORDER = OutlineInputBorder(
 final ThemeData lightTheme = ThemeData(
   primaryColor: PRIMARY_COLOR,
   scaffoldBackgroundColor: SCAFFOLD_BACKGROUND_COLOR,
-
+  outlinedButtonTheme: OutlinedButtonThemeData(
+    style: OutlinedButton.styleFrom(
+      foregroundColor: Colors.white,
+    ),
+  ),
+  textTheme: TextTheme(
+    // Large headings, ideal for page titles or sections
+    displayLarge: const TextStyle(
+      fontSize: 48, // Larger font for web
+      fontWeight: FontWeight.bold,
+      color: Colors.black,
+    ),
+    // Medium headings, for subtitles or secondary headings
+    displayMedium: const TextStyle(
+      fontSize: 36,
+      fontWeight: FontWeight.bold,
+      color: Colors.black87,
+    ),
+    // Small headings, useful for tertiary headings
+    displaySmall: const TextStyle(
+      fontSize: 28,
+      fontWeight: FontWeight.w600,
+      color: Colors.black87,
+    ),
+    // For cards, list titles, or emphasized content
+    headlineMedium: const TextStyle(
+      fontSize: 22,
+      fontWeight: FontWeight.w500,
+      color: Colors.black54,
+    ),
+    // Used for small emphasized text, like input labels
+    titleMedium: const TextStyle(
+      fontSize: 18,
+      fontWeight: FontWeight.w400,
+      color: Colors.black54,
+    ),
+    // Default body text, used for most content
+    // Caption text, like for images or minor content
+    bodySmall: const TextStyle(
+      fontSize: 12,
+      fontWeight: FontWeight.w400,
+      color: Colors.white,
+    ),
+    // Smaller body text, often for captions or helper text
+    bodyMedium: const TextStyle(
+      fontSize: 14,
+      fontWeight: FontWeight.normal,
+      color: Colors.white,
+    ),
+    // Used for buttons
+    bodyLarge: const TextStyle(
+      fontSize: 16,
+      fontWeight: FontWeight.normal,
+      color: Colors.white,
+    ),
+    labelLarge: const TextStyle(
+      fontSize: 16,
+      fontWeight: FontWeight.bold,
+      color: Colors.white,
+    ),
+    // Overline text, typically uppercase and small
+    labelSmall: TextStyle(
+      fontSize: 10,
+      fontWeight: FontWeight.w400,
+      color: Colors.grey[600],
+    ),
+  ),
   //******************************** AppBar Theme ********************************
 
   appBarTheme: const AppBarTheme(
     backgroundColor: PRIMARY_COLOR,
     foregroundColor: Colors.white,
   ),
-
+  iconTheme: const IconThemeData(color: Colors.white),
   //******************************** InputDecoration Theme ********************************
   inputDecorationTheme: const InputDecorationTheme(
     enabledBorder: ENABLED_BORDER,
