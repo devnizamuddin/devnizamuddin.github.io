@@ -1,6 +1,7 @@
-import 'package:devnizamuddin_github_io/app/modules/home/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import 'app/home/views/home_view.dart';
 
 class DevNizamUddin extends StatelessWidget {
   const DevNizamUddin({super.key});
