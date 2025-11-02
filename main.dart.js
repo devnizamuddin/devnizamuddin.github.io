@@ -78799,7 +78799,7 @@ aj(){return new A.C6()}}
 A.C6.prototype={
 akq(){this.am(new A.agS(this))},
 L(a){var s=null,r=A.ka(B.a5,s,B.ml,B.i,A.aJl().$0(),s),q=A.ka(B.y,s,B.ml,B.Bz,A.ano(A.ka(B.y,s,s,s,s,s).ok),s),p=this.d,o=p?B.z_:B.Sv
-return new A.xh(new A.y_(p,this.gakp(),s),"Nizam Uddin Shamrat - Flutter Developer",r,q,o,!1,s)}}
+return new A.xh(new A.y_(p,this.gakp(),s),"Nizam Uddin Shamrat",r,q,o,!1,s)}}
 A.agS.prototype={
 $0(){var s=this.a
 s.d=!s.d},
