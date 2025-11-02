@@ -1,6 +1,6 @@
 {
-    "name": "dev_nizam_uddin_portfolio_flutter",
-    "short_name": "dev_nizam_uddin_portfolio_flutter",
+    "name": "portfolio_flutter",
+    "short_name": "portfolio_flutter",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
