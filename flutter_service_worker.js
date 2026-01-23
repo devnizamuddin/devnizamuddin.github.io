@@ -61,8 +61,8 @@ const RESOURCES = {"flutter.js": "24bc71911b75b5f8135c949e27a2984e",
 "assets/assets/project/quantum_possibilities/quantum_possibilities_banner.png": "21899d308c62d3bbdcc698dd73b66fae",
 "assets/assets/logo/app_logo_and_text.png": "764dd0403abf9df47c19facb1f8f43b2",
 "assets/assets/logo/app_logo.png": "df03b92ed3c015c502ce875b89249789",
-"assets/assets/journey/pridesys_logo.png": "571dc9748abf1a94c72848be93a5dd34",
-"assets/assets/journey/pakiza_logo.png": "969073b8337f1962130756d45e1453a9",
+"assets/assets/journey/pridesys_logo.png": "c3b2645e831aecabba3f09e3cce98b0a",
+"assets/assets/journey/pakiza_logo.png": "bf54510dc9165dd96e58c2b28bde0e51",
 "assets/assets/menu/stickies_logo.png": "7dd3b4845f93a81eb6a45adcd2d1389c",
 "assets/assets/menu/medium_logo.png": "f4297ce0c700b3f67a6546f7c79c4a02",
 "assets/assets/skill/api/api_icon.png": "32f244f993a583e0548e4e2c1a3742cf",
@@ -128,9 +128,9 @@ const RESOURCES = {"flutter.js": "24bc71911b75b5f8135c949e27a2984e",
 "canvaskit/canvaskit.js.symbols": "a3c9f77715b642d0437d9c275caba91e",
 "canvaskit/skwasm.js.symbols": "3a4aadf4e8141f284bd524976b1d6bdc",
 "favicon.png": "3aae5d99f1e0ac873ea18759d9772211",
-"flutter_bootstrap.js": "f696807edd7231be6c50f5997ba09d05",
-"version.json": "80bee5faede559c258d72259a88a0acd",
-"main.dart.js": "1300af8ae1fbf54c6778cef3fb6d39e1"};
+"flutter_bootstrap.js": "0d6a9af86069be1f96cd0f4ef1f9d61d",
+"version.json": "e3072a4f4785544160247e0a89d5e4e6",
+"main.dart.js": "fe756f720f092f73857fa29d25881ef3"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
