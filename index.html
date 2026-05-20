@@ -2,174 +2,56 @@
 <html>
 
 <head>
-
   <base href="/">
 
+  <!-- ================= SEO CORE ================= -->
   <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description"
-    content="Portfolio of a Lead Flutter Developer. Expert in building high-performance cross-platform applications for Android & iOS" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Nizam Uddin Shamrat">
+  <title>Nizam Uddin Shamrat | Lead Flutter Developer</title>
+
+  <meta name="title" content="Lead Flutter Developer Portfolio">
+  <meta name="description"
+    content="Portfolio of a Lead Flutter Developer specializing in high-performance Flutter apps, Clean Architecture, and scalable mobile systems.">
+
+  <meta name="author" content="Nizam Uddin Shamrat">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://devnizamuddin.github.io/">
+
+  <!-- ================= OPEN GRAPH (LinkedIn / Facebook / WhatsApp) ================= -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nizam Uddin Shamrat Portfolio">
+  <meta property="og:title" content="Lead Flutter Developer Portfolio">
+  <meta property="og:description"
+    content="High-performance Flutter apps • Clean Architecture • Scalable mobile engineering">
+  <meta property="og:url" content="https://devnizamuddin.github.io/">
+
+  <!-- 🔥 MUST: 1200x630 image -->
+  <meta property="og:image" content="https://devnizamuddin.github.io/assets/cover/link_cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Flutter Developer Portfolio Preview">
+
+  <!-- ================= TWITTER CARD ================= -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lead Flutter Developer Portfolio">
+  <meta name="twitter:description" content="Flutter • Clean Architecture • High-performance mobile systems">
+  <meta name="twitter:image" content="https://devnizamuddin.github.io/assets/cover/link_cover.png">
+
+  <!-- ================= THEME ================= -->
+  <meta name="theme-color" content="#0A0F1C">
+
+  <!-- ================= ICONS ================= -->
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png" />
-
-  <title>Nizam Uddin Shamrat</title>
+  <!-- ================= PWA ================= -->
   <link rel="manifest" href="manifest.json">
-
-  <style>
-    /* ─── Google Font ─────────────────────────────────────────── */
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
-
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* ─── Loader backdrop ─────────────────────────────────────── */
-    #app-loader {
-      position: fixed;
-      inset: 0;
-      z-index: 9999;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 32px;
-      background: #090e1a;
-      transition: opacity 0.6s ease, visibility 0.6s ease;
-    }
-
-    #app-loader.hidden {
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-    }
-
-    /* ─── Logo container ──────────────────────────────────────── */
-    .loader-logo {
-      width: 72px;
-      height: 70px;
-      position: relative;
-    }
-
-    /* Glow ring behind the logo */
-    .loader-logo::before {
-      content: '';
-      position: absolute;
-      inset: -18px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(26, 199, 227, 0.18) 0%, transparent 70%);
-      animation: pulse-glow 2s ease-in-out infinite;
-    }
-
-    /* ─── Inline SVG path animation ───────────────────────────── */
-    .loader-logo svg {
-      width: 100%;
-      height: 100%;
-      overflow: visible;
-    }
-
-    .loader-logo svg path {
-      fill: none;
-      stroke: #1AC7E3;
-      stroke-width: 14;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-dasharray: 4500;
-      stroke-dashoffset: 4500;
-      animation: draw-path 1.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-      filter: drop-shadow(0 0 8px rgba(26, 199, 227, 0.7));
-    }
-
-    @keyframes draw-path {
-      to {
-        stroke-dashoffset: 0;
-      }
-    }
-
-    /* ─── Glow pulse ──────────────────────────────────────────── */
-    @keyframes pulse-glow {
-
-      0%,
-      100% {
-        transform: scale(1);
-        opacity: 0.8;
-      }
-
-      50% {
-        transform: scale(1.15);
-        opacity: 1;
-      }
-    }
-
-    /* ─── Loading label ───────────────────────────────────────── */
-    .loader-label {
-      font-family: 'Inter', sans-serif;
-      font-size: 13px;
-      font-weight: 400;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.45);
-      animation: fade-pulse 1.6s ease-in-out infinite;
-    }
-
-    @keyframes fade-pulse {
-
-      0%,
-      100% {
-        opacity: 0.45;
-      }
-
-      50% {
-        opacity: 0.85;
-      }
-    }
-
-    /* ─── Progress bar ────────────────────────────────────────── */
-    .loader-bar-track {
-      width: 140px;
-      height: 2px;
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: 999px;
-      overflow: hidden;
-    }
-
-    .loader-bar-fill {
-      height: 100%;
-      width: 0%;
-      background: linear-gradient(90deg, #1AC7E3, #0af);
-      border-radius: 999px;
-      animation: bar-fill 2.2s ease forwards;
-      box-shadow: 0 0 8px #1AC7E3;
-    }
-
-    @keyframes bar-fill {
-      0% {
-        width: 0%;
-      }
-
-      40% {
-        width: 55%;
-      }
-
-      80% {
-        width: 85%;
-      }
-
-      100% {
-        width: 100%;
-      }
-    }
-  </style>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Nizam Portfolio">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 
 <body>
